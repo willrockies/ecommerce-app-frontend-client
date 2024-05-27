@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## localhost certificate 
+no powershell rodar o comando como admin > choco install mkcert
+
+criar uma pasta no angular ssl > rodar o comando  <mkcert -install> e depois garantir o acesso na pasta rodar o comando <mkcert localhost>
+- maiores informações acessa https://github.com/FiloSottile/mkcert
