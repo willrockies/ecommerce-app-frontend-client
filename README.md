@@ -31,3 +31,9 @@ no powershell rodar o comando como admin > choco install mkcert
 
 criar uma pasta no angular ssl > rodar o comando  <mkcert -install> e depois garantir o acesso na pasta rodar o comando <mkcert localhost>
 - maiores informações acessa https://github.com/FiloSottile/mkcert
+
+
+## Adding bootstrap and font-awesome
+
+ng add ngx-bootstrap
+npm install font-awesome
