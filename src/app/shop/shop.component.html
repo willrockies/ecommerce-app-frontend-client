@@ -58,7 +58,7 @@
          [totalItems]="totalCount"
          [itemsPerPage]="shopParams.pageSize"
          [maxSize]="10"
-         >
+         (pageChanged)="onPageChanged($event)">
         </pagination>
       </div>
     </section>
