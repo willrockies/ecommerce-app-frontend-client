@@ -23,6 +23,7 @@ export class ShopComponent implements OnInit {
     {name: 'Price: High to low', value: 'priceDesc'}
   ];
 
+
   constructor(private shopService: ShopService) { }
 
 
