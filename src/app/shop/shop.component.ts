@@ -1,6 +1,6 @@
 import { ShopParams } from './../shared/models/shopParams';
 import { ShopService } from './shop.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Product } from '../shared/models/product';
 import { Brand } from '../shared/models/brand';
 import { Type } from '../shared/models/type';
@@ -11,11 +11,12 @@ import { Type } from '../shared/models/type';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
-
+  @ViewChild('searchInput') searchTerm?: ElementRef;
   products: Product[] = [];
   brands: Brand[] = [];
   types: Type[] = [];
-  shopParams = new ShopParams()
+  shopParams = new ShopParams();
+
 
   sortOptions = [
     { name: 'Alphabetical', value: 'name' },
@@ -24,6 +25,7 @@ export class ShopComponent implements OnInit {
   ];
 
   totalCount = 0;
+
 
   constructor(private shopService: ShopService) { }
 
@@ -78,5 +80,17 @@ export class ShopComponent implements OnInit {
       this.shopParams.pageNumber = event;
       this.getProducts();
     }
+  }
+
+  onSearch() {
+    this.shopParams.search = this.searchTerm?.nativeElement.value;
+    this.getProducts();
+
+  }
+
+  onReset(){
+    if(this.searchTerm) this.searchTerm.nativeElement.value = '';
+    this.shopParams = new ShopParams();
+    this.getProducts();
   }
 }
