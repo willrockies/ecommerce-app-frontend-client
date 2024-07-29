@@ -62,4 +62,16 @@ npm install font-awesome
    To handle errors we receive from the API centrally and handled by the HTTP interceptor.
 
    To undestand how to troubleshoot API Errors
+
+# Pazzazz
+ - Improving the UI
+ - Adding a page header
+ - Adding breadcrumb 
+ - Styling the product items
+ - Adding loading indicators 
+ - changing the bootstrap theme
+ - Improving the home page
+
+ ## Goal:
+ to improve the UI, to add dynamic breacrumbs and page headers, to display a loading indicator when the app is waiting dor data from the api
    
