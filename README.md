@@ -37,3 +37,16 @@ criar uma pasta no angular ssl > rodar o comando  <mkcert -install> e depois gar
 
 ng add ngx-bootstrap
 npm install font-awesome
+
+
+# Routing
+
+ - Adding new feature modules
+ - Setting up routes
+ - Nav Links
+ - Lazy loading 
+
+ - SPA's need routers
+ - Angular router will load a component when route is activated
+ - RouterOutler
+ - Module architecture of our app encourages lazy loading
