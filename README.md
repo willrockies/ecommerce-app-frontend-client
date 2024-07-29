@@ -50,3 +50,16 @@ npm install font-awesome
  - Angular router will load a component when route is activated
  - RouterOutler
  - Module architecture of our app encourages lazy loading
+
+# Error Handling
+
+  - Error handling in Angular
+  - Http interceptors
+  - Adding toast notifications
+  - troubleshooting tips
+
+  ## Goal:
+   To handle errors we receive from the API centrally and handled by the HTTP interceptor.
+
+   To undestand how to troubleshoot API Errors
+   
