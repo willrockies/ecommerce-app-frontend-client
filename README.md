@@ -75,3 +75,7 @@ npm install font-awesome
  ## Goal:
  to improve the UI, to add dynamic breacrumbs and page headers, to display a loading indicator when the app is waiting dor data from the api
    
+
+
+  ## Adding breadcrumbs
+  npm install xng-breadcrumb@9.x.x
