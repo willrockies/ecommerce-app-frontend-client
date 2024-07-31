@@ -11,7 +11,9 @@ import { BreadcrumbService } from 'xng-breadcrumb';
 })
 export class ProductDetailsComponent implements OnInit {
   product?: Product;
-  constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute, private bsSercvice: BreadcrumbService) { }
+  constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute, private bcSercvice: BreadcrumbService) {
+    this.bcSercvice.set('@productsDetails', ' ');
+  }
 
   ngOnInit(): void {
     this.loadProduct();
@@ -22,7 +24,7 @@ export class ProductDetailsComponent implements OnInit {
     if (id) this.shopService.getProduct(+id).subscribe({
       next: product => {
         this.product = product
-        this.bsSercvice.set('@productsDetails', product.name);
+        this.bcSercvice.set('@productsDetails', product.name);
       },
       error: error => console.log(error)
     });
