@@ -83,3 +83,7 @@ npm install font-awesome
 
   ## changing the bootstrap theme
   npm install bootswatch
+
+
+  ## Adding loading indicators 
+  npm install ngx-spinner
