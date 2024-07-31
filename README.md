@@ -79,3 +79,7 @@ npm install font-awesome
 
   ## Adding breadcrumbs
   npm install xng-breadcrumb@9.x.x
+
+
+  ## changing the bootstrap theme
+  npm install bootswatch
