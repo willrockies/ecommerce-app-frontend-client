@@ -87,3 +87,12 @@ npm install font-awesome
 
   ## Adding loading indicators 
   npm install ngx-spinner
+
+## Basket
+  - Adding the basket feature
+  - The BehaviorSubject
+  - Using the async pipe
+  - Subscribing & Unsubscribing 
+
+Goal:
+  To add the basket feature to the angular app. To Understand the usage of the BehaviorSubject and async pipe
