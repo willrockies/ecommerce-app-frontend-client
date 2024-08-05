@@ -23,6 +23,7 @@
           class="fa fa-minus-circle text-warning me-2"
           style="cursor: pointer; font-size: 2em"
           (click)="decrementQuantity()"
+          [class.disabled]="quantity < 1"
         ></i>
         <span class="font-weight-bold" style="font-size: 1.5em">{{quantity}}</span>
         <i
